@@ -51,5 +51,10 @@ namespace Reader
                 }
             }
         }
+
+        private void txt_rfid_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

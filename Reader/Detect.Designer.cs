@@ -85,6 +85,7 @@
             this.txt_rfid.Name = "txt_rfid";
             this.txt_rfid.Size = new System.Drawing.Size(168, 32);
             this.txt_rfid.TabIndex = 3;
+            this.txt_rfid.TextChanged += new System.EventHandler(this.txt_rfid_TextChanged);
             // 
             // timer1
             // 
