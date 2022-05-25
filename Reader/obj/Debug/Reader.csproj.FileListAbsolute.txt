@@ -1,0 +1,13 @@
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\bin\Debug\Reader.exe.config
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\bin\Debug\Reader.exe
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\bin\Debug\Reader.pdb
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.csproj.AssemblyReference.cache
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.csproj.SuggestedBindingRedirects.cache
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.Form1.resources
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.Properties.Resources.resources
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.csproj.GenerateResource.cache
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.csproj.CoreCompileInputs.cache
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.exe
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.pdb
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.Input.resources
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.Detect.resources
