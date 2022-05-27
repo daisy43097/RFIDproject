@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_new = new System.Windows.Forms.Button();
             this.dgv_rfid = new System.Windows.Forms.DataGridView();
+            this.btn_new = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_rfid)).BeginInit();
             this.SuspendLayout();
@@ -47,17 +47,6 @@
             this.panel1.Size = new System.Drawing.Size(1187, 550);
             this.panel1.TabIndex = 0;
             // 
-            // btn_new
-            // 
-            this.btn_new.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_new.Location = new System.Drawing.Point(21, 3);
-            this.btn_new.Name = "btn_new";
-            this.btn_new.Size = new System.Drawing.Size(104, 39);
-            this.btn_new.TabIndex = 0;
-            this.btn_new.Text = "NEW";
-            this.btn_new.UseVisualStyleBackColor = true;
-            this.btn_new.Click += new System.EventHandler(this.btn_new_Click);
-            // 
             // dgv_rfid
             // 
             this.dgv_rfid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -71,6 +60,18 @@
             this.dgv_rfid.Size = new System.Drawing.Size(1187, 472);
             this.dgv_rfid.TabIndex = 1;
             this.dgv_rfid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_rfid_CellClick);
+            // 
+            // btn_new
+            // 
+            this.btn_new.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_new.Location = new System.Drawing.Point(21, 3);
+            this.btn_new.Name = "btn_new";
+            this.btn_new.Size = new System.Drawing.Size(108, 50);
+            this.btn_new.TabIndex = 0;
+            this.btn_new.Text = "NEW";
+            this.btn_new.UseCompatibleTextRendering = true;
+            this.btn_new.UseVisualStyleBackColor = true;
+            this.btn_new.Click += new System.EventHandler(this.btn_new_Click);
             // 
             // Form1
             // 

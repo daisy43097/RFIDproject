@@ -35,6 +35,7 @@
             this.btn_add = new System.Windows.Forms.Button();
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_scan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_rfid
@@ -81,7 +82,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add.Location = new System.Drawing.Point(17, 293);
+            this.btn_add.Location = new System.Drawing.Point(17, 353);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(102, 38);
             this.btn_add.TabIndex = 4;
@@ -95,7 +96,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.Location = new System.Drawing.Point(179, 293);
+            this.btn_edit.Location = new System.Drawing.Point(179, 353);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(102, 38);
             this.btn_edit.TabIndex = 5;
@@ -109,7 +110,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.Location = new System.Drawing.Point(336, 293);
+            this.btn_delete.Location = new System.Drawing.Point(336, 353);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(102, 38);
             this.btn_delete.TabIndex = 6;
@@ -117,11 +118,26 @@
             this.btn_delete.UseVisualStyleBackColor = true;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
+            // btn_scan
+            // 
+            this.btn_scan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_scan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_scan.Location = new System.Drawing.Point(179, 254);
+            this.btn_scan.Name = "btn_scan";
+            this.btn_scan.Size = new System.Drawing.Size(102, 38);
+            this.btn_scan.TabIndex = 7;
+            this.btn_scan.Text = "SCAN";
+            this.btn_scan.UseVisualStyleBackColor = true;
+            this.btn_scan.Click += new System.EventHandler(this.btn_scan_Click);
+            // 
             // Input
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_scan);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_add);
@@ -146,5 +162,6 @@
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_scan;
     }
 }

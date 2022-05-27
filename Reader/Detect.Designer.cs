@@ -29,63 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lbl_type = new System.Windows.Forms.Label();
-            this.cb_type = new System.Windows.Forms.ComboBox();
-            this.lbl_rfid = new System.Windows.Forms.Label();
-            this.txt_rfid = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbl_message = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btn_scan = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // lbl_type
-            // 
-            this.lbl_type.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_type.AutoSize = true;
-            this.lbl_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_type.Location = new System.Drawing.Point(120, 177);
-            this.lbl_type.Name = "lbl_type";
-            this.lbl_type.Size = new System.Drawing.Size(63, 26);
-            this.lbl_type.TabIndex = 0;
-            this.lbl_type.Text = "Type";
-            // 
-            // cb_type
-            // 
-            this.cb_type.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cb_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_type.FormattingEnabled = true;
-            this.cb_type.Items.AddRange(new object[] {
-            "TLD",
-            "LunchBox"});
-            this.cb_type.Location = new System.Drawing.Point(211, 179);
-            this.cb_type.Name = "cb_type";
-            this.cb_type.Size = new System.Drawing.Size(168, 34);
-            this.cb_type.TabIndex = 1;
-            // 
-            // lbl_rfid
-            // 
-            this.lbl_rfid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_rfid.AutoSize = true;
-            this.lbl_rfid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_rfid.Location = new System.Drawing.Point(120, 78);
-            this.lbl_rfid.Name = "lbl_rfid";
-            this.lbl_rfid.Size = new System.Drawing.Size(67, 26);
-            this.lbl_rfid.TabIndex = 2;
-            this.lbl_rfid.Text = "RFID";
-            // 
-            // txt_rfid
-            // 
-            this.txt_rfid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_rfid.Location = new System.Drawing.Point(211, 80);
-            this.txt_rfid.Name = "txt_rfid";
-            this.txt_rfid.Size = new System.Drawing.Size(168, 32);
-            this.txt_rfid.TabIndex = 3;
-            this.txt_rfid.TextChanged += new System.EventHandler(this.txt_rfid_TextChanged);
             // 
             // timer1
             // 
@@ -96,21 +48,68 @@
             // lbl_message
             // 
             this.lbl_message.AutoSize = true;
-            this.lbl_message.Location = new System.Drawing.Point(432, 141);
+            this.lbl_message.Location = new System.Drawing.Point(427, 88);
             this.lbl_message.Name = "lbl_message";
             this.lbl_message.Size = new System.Drawing.Size(0, 20);
             this.lbl_message.TabIndex = 5;
+            // 
+            // listView1
+            // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(12, 162);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(867, 263);
+            this.listView1.TabIndex = 6;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "tag";
+            this.columnHeader1.Width = 116;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "type";
+            this.columnHeader2.Width = 142;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "latest_seen_time";
+            this.columnHeader3.Width = 182;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "check_time";
+            this.columnHeader4.Width = 175;
+            // 
+            // btn_scan
+            // 
+            this.btn_scan.Location = new System.Drawing.Point(96, 47);
+            this.btn_scan.Name = "btn_scan";
+            this.btn_scan.Size = new System.Drawing.Size(99, 52);
+            this.btn_scan.TabIndex = 7;
+            this.btn_scan.Text = "SCAN";
+            this.btn_scan.UseVisualStyleBackColor = true;
+            this.btn_scan.Click += new System.EventHandler(this.btn_scan_Click);
             // 
             // Detect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 446);
+            this.ClientSize = new System.Drawing.Size(891, 446);
+            this.Controls.Add(this.btn_scan);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.lbl_message);
-            this.Controls.Add(this.txt_rfid);
-            this.Controls.Add(this.lbl_rfid);
-            this.Controls.Add(this.cb_type);
-            this.Controls.Add(this.lbl_type);
             this.Name = "Detect";
             this.Text = "Detect";
             this.ResumeLayout(false);
@@ -119,12 +118,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbl_type;
-        private System.Windows.Forms.ComboBox cb_type;
-        private System.Windows.Forms.Label lbl_rfid;
-        private System.Windows.Forms.TextBox txt_rfid;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbl_message;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Button btn_scan;
     }
 }

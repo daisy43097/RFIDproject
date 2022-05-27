@@ -10,5 +10,14 @@ namespace rfidsinfo
     {
         public string RFID { get; set; }
         public string Type { get; set; }
+        public DateTime SeenTime { get; set; }
+        public DateTime CheckTime { get; set; }
+
+        public void Clear()
+        {
+            RFID = string.Empty;
+            Type = string.Empty;
+        }
+
     }
 }

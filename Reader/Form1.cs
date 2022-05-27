@@ -27,7 +27,10 @@ namespace Reader
             list = MyConnection.GetTable("select * from RFIDtbl");
             BindingSource bd = new BindingSource();
             bd.DataSource = list;
-            dgv_rfid.DataSource = bd;
+            if (dgv_rfid.InvokeRequired)
+                dgv_rfid.Invoke(new MethodInvoker(() => dgv_rfid.DataSource = bd));
+            else
+                dgv_rfid.DataSource = bd;
             dgv_rfid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
         private void btn_new_Click(object sender, EventArgs e)

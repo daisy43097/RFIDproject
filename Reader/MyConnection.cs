@@ -137,5 +137,22 @@ namespace DBconnection
             conn.Close();
             return ms;
         }
+
+        public static Dictionary<string, Tuple<string, DateTime>> GetDict(string Q)
+        {
+            string sql = Q;
+            SqlConnection conn = OpenConnection();
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            Dictionary<string, Tuple<string, DateTime>> detectedID = new Dictionary<string, Tuple<string, DateTime>>();
+            while (reader.Read())
+            {
+                Tuple<string, DateTime> info = new Tuple<string, DateTime>((string)reader["Type"], DateTime.Now);
+                detectedID[(string)reader["RFID"]] = new Tuple<string, DateTime>((string)reader["Type"], DateTime.Now);
+            }
+            conn.Close();
+            return detectedID;
+        }
     }
 }
