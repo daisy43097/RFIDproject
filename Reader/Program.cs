@@ -16,7 +16,7 @@ namespace Reader
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Detect());
+            Application.Run(new Form2());
         }
     }
 }

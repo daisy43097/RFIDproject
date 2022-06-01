@@ -172,11 +172,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Detect.cs">
+    <Compile Include="DetectFood.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Detect.Designer.cs">
-      <DependentUpon>Detect.cs</DependentUpon>
+    <Compile Include="DetectFood.Designer.cs">
+      <DependentUpon>DetectFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetectTLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetectTLD.Designer.cs">
+      <DependentUpon>DetectTLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="rfidinfo.cs" />
     <Compile Include="Form1.cs">
@@ -194,11 +206,17 @@
     <Compile Include="MyConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Detect.resx">
-      <DependentUpon>Detect.cs</DependentUpon>
+    <EmbeddedResource Include="DetectFood.resx">
+      <DependentUpon>DetectFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetectTLD.resx">
+      <DependentUpon>DetectTLD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Input.resx">
       <DependentUpon>Input.cs</DependentUpon>
@@ -211,6 +229,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -225,6 +244,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_icon_red-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon-red-6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tld.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lb.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.4\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.4\build\System.Text.Json.targets')" />

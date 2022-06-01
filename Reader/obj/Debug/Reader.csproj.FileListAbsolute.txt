@@ -10,7 +10,6 @@ C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.cspro
 C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.exe
 C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.pdb
 C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.Input.resources
-C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.Detect.resources
 C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
 C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
 C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
@@ -63,3 +62,6 @@ C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\bin\Debug\System.Threa
 C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\bin\Debug\System.ValueTuple.xml
 C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.csproj.CopyComplete
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.Form2.resources
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.DetectFood.resources
+C:\Users\Daisy Wu\source\repos\Project\RFIDproject\Reader\obj\Debug\Reader.DetectTLD.resources

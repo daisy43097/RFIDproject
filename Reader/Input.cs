@@ -150,14 +150,6 @@ namespace Reader
                             else
                                 cb_type.Text = detectedID[txt_rfid.Text].Item1;
                         } 
-                        
-                        //else
-                        //{
-                        //    if (cb_type.InvokeRequired)
-                        //        cb_type.Invoke(new MethodInvoker(() => cb_type.SelectedIndex = -1));
-                        //    else
-                        //        cb_type.SelectedIndex = -1;
-                        //}
                     }
                     catch (Exception ex)
                     {
@@ -175,6 +167,11 @@ namespace Reader
                 
             }
             
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void btn_add_Click(object sender, EventArgs e)
